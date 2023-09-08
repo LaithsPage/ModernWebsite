@@ -1,3 +1,75 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap');
+
+@font-face {
+    font-family: "Bad Coma";
+    src: url(/Fonts/Bad\ Coma.ttf) format(ttf);
+}
+
+* {
+    /* Border box makes it so the size of the elements are determined by
+    both the padding and margin and the size of the content.
+    So if we had a box and we set the width to 200px and padding to 20px, the result is 200 px wide and 20 px padding which is 240 px wide. With border box, the padding will be accounted for and the element will be 200 px wide and the padding will be set while taking into account those pixels*/
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(54, 39, 39);
+}
+
+html, body {
+    /* background-color: grey; */
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    color: #000;
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+    font-family: Bad Coma;
+}
+
+.nav a:hover {
     background-color: grey;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.main-header {
+    background-image: url(Images/arca1000000-arca.gif);
+    background-size: cover;
+    background-color: rgba(0, 174, 255, 0.253);
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                  url("Images/arcabanner.png"); */
+}
+
+.artist-name {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    font-family: Bad Coma;
+    
+}
+
+p {
+    font-weight: 400;
 }
