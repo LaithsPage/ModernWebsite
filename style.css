@@ -5,13 +5,18 @@
     src: url(/Fonts/Bad\ Coma.ttf) format(ttf);
 }
 
+@font-face {
+    font-family: "Wrong Delivery";
+    src: url(/Fonts/Wrong\ Delivery.ttf) format(ttf);
+}
+
 * {
     /* Border box makes it so the size of the elements are determined by
     both the padding and margin and the size of the content.
     So if we had a box and we set the width to 200px and padding to 20px, the result is 200 px wide and 20 px padding which is 240 px wide. With border box, the padding will be accounted for and the element will be 200 px wide and the padding will be set while taking into account those pixels*/
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color:rgb(54, 39, 39);
+    
 }
 
 html, body {
@@ -53,23 +58,87 @@ html, body {
 }
 
 .main-header {
-    background-image: url(Images/arca1000000-arca.gif);
+    /* background-image: url(Images/arca1000000-arca.gif);
+    background-color: rgba(0, 174, 255, 0.253); */
     background-size: cover;
-    background-color: rgba(0, 174, 255, 0.253);
     background-blend-mode: multiply;
     padding-bottom: 30px;
-    /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
-                  url("Images/arcabanner.png"); */
+    background-image: linear-gradient(rgba(255, 115, 197, 0.651), rgba(131, 205, 255, 0.644)),
+                  url("Images/arca1000000-arca.gif");
+}
+
+h1.artist-name {
+    color: white;
 }
 
 .artist-name {
-    color: white;
     text-align: center;
     font-size: 4em;
-    font-family: Bad Coma;
-    
+    font-family: Bad Coma;    
+    font-weight: normal;
 }
 
-p {
+
+.artist-name-large {
+    font-size: 8em;
+}
+
+.content-section p {
     font-weight: 400;
+    color:rgb(54, 39, 39);
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-header {
+    font-family: "Wrong Delivery";
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    color:rgb(54, 39, 39);
+}
+
+
+.about-artist-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+h3.artist-name {
+    color:rgb(54, 39, 39);
+}
+
+.main-footer {
+    background-color: #56CCF2;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
 }
